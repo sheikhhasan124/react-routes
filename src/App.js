@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes,  } from 'react-router-dom';
+import FriendDetail from './component/FriendDetail/FriendDetail';
 import Friends from './component/Friends/Friends';
 import Header from './component/Header/Header';
 
@@ -16,6 +17,7 @@ const App = () => {
                <Routes>
                         <Route path="/" element={ <Home />}></Route>
                         <Route path="/friends" element={ <Friends />}></Route>
+                        <Route path="/friend/:friendId" element={ <FriendDetail />}></Route>
                          
                         <Route path="/service" element={ <Service />}></Route>
                         <Route path="*" element={<NotFound />} ></Route>
