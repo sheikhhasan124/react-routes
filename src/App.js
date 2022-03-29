@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes,  } from 'react-router-dom';
 import Friends from './component/Friends/Friends';
+import Header from './component/Header/Header';
 
 
 import Home from './component/home/Home';
@@ -10,8 +11,8 @@ import Service from './component/servise/Service';
 const App = () => {
     return (
         <div>
-            <h2>well come to route project</h2>
-          
+           
+                   <Header />
                <Routes>
                         <Route path="/" element={ <Home />}></Route>
                         <Route path="/friends" element={ <Friends />}></Route>
