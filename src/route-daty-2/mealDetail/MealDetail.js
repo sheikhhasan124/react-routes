@@ -16,6 +16,7 @@ const MealDetail = () => {
         <div>
             <h2>meal detail{id}</h2>
             <h3>{mealDetail.strMeal}</h3>
+            <h3>{mealDetail.strInstructions.slice(0,100)}</h3>
         </div>
     );
 };
